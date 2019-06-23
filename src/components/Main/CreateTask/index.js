@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import './style.css';
 
 export default class CreateTask extends Component {
-
     render() {
         const { value, creatingDisplay, error } = this.props;
         const { refs, handleCreate, handleClickCancel, handleClickSave, valid } = this.props;

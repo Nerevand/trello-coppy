@@ -1,0 +1,14 @@
+.main {
+  width: 96%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-create__area {
+  flex-direction: column;
+}

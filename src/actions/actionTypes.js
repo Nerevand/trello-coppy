@@ -1,0 +1,6 @@
+export const NEW_BOARD = 'NEW_BOARD';
+export const REMOVE_BOARD = 'REMOVE_BOARD';
+export const ACTIVE_BOARD = 'ACTIVE_BOARD';
+
+export const COLLECTION_BOARD = 'COLLECTION_BOARD';
+export const UPDATE_BOARD = 'UPDATE_BOARD';

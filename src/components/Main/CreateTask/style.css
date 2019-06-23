@@ -1,0 +1,140 @@
+.main-create {
+  width: 15%;
+  min-width: 250px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #0044ff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 250ms;
+  margin-right: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.main-create:hover {
+  transition: 250ms;
+  transform: scale(1.02);
+}
+
+.main-createTask__close {
+  position: absolute;
+  width: 8%;
+  top: -5px;
+  right: -5px;
+  transition: transform 0.25s, opacity 0.25s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.main-createTask__close:hover {
+  transform: rotate(270deg);
+}
+
+hr {
+  width: 100%;
+}
+
+.main-create__input {
+  padding: 11px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2.5px solid rgba(255, 255, 255, 0.8);
+  width: 100%;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),
+    0 3px 3px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  width: 200px;
+}
+
+.main-error__message {
+  width: 100%;
+  min-height: 20px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.main-create__btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.button_hb {
+  color: #448aff;
+  font-size: 16px;
+}
+
+.button_hb:before {
+  background-color: rgb(255, 255, 0);
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button_hb {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.23);
+}
+
+.button_hb {
+  position: relative;
+  overflow: hidden;
+  transition: color 1.5s ease-out;
+}
+
+.button_hb:before {
+  content: "";
+  background-color: rgb(255, 255, 0);
+}
+
+.button_hb:focus {
+  outline: none;
+}
+
+.button_hb:hover,
+.button_hb:focus {
+  color: #000;
+}
+
+.button_hb .button__icon,
+.button_hb:not(.button_hidden-text) .button__label {
+  position: relative;
+  z-index: 2;
+}
+
+.button_hb-type2:before {
+  width: 0;
+  height: 0;
+  padding: 50%;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate3d(-50%, -50%, 0) scale(0);
+  transition: transform 0.35s ease-out;
+}
+
+.button_hb-type2:hover:before,
+.button_hb-type2:focus:before {
+  transition-duration: 0.35s;
+  transform: translate3d(-50%, -50%, 0) scale(1.5);
+}
